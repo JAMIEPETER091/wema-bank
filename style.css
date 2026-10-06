@@ -414,3 +414,13 @@ margin-left:35%;
 .mnh{
    background-color: #FFF4FF; 
 }
+
+.nbvb{
+    height: 200px !important; 
+    width: 30% !important;
+}
+
+.mnb{
+    display: flex;
+    flex-wrap: nowrap !important;
+}
