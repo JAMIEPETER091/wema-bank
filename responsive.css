@@ -296,7 +296,7 @@ img { max-width: 100%; }
 
   
   .site-footer { padding: 40px 16px 24px; }
-  .footer-container { gap: 36px; display: none !important;}
+  .footer-container { gap: 36px;}
   .newsletter-banner { padding: 20px 16px; display: none !important;}
   .newsletter-left { min-width: 0; display: none !important;}
   .newsletter-text h3 { font-size: 1.05rem;  display: none !important;}

@@ -13,7 +13,6 @@
 
 .home:hover{
     border-bottom: 2px solid #981D87;
-    margin-top: -2%;
     color: #981D87 !important;
 }
 
@@ -45,7 +44,7 @@ font-size: 15px;
      border: 1px solid;
      text-wrap: nowrap;
      padding: 5px;
-     height: 6dvh !important;
+     /* height: 2dvh !important; */
      border-radius: 27px;
      display: flex;
      gap: 5px;
@@ -1631,6 +1630,8 @@ margin-left: 3% !important;
   color: #ffffff;
   padding: 60px 20px 30px 20px;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-container {
