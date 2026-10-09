@@ -1,0 +1,326 @@
+/* =========================================================
+   responsive.css  -  load AFTER style.css
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive.css">
+   ========================================================= */
+
+/* ---------- Global safety ---------- */
+html, body { max-width: 100%; overflow-x: hidden; }
+img { max-width: 100%; }
+bo, bod, footeru { display: block; }          /* custom tags in the HTML */
+
+/* ---------- Tablet and below (<= 991px) ---------- */
+@media (max-width: 991px) {
+
+  /* your old 1024px rule padded the whole body; undo it */
+  body { padding: 0 !important; }
+
+  /* ===== Top nav ===== */
+  nav {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 12px;
+  }
+  .jay  { order: 1; margin: 0; }
+  .gat  { order: 2; margin: 0; padding: 6px 14px; align-items: center; }
+  .gat p { margin: 0; }
+  .hay  { margin-top: 0; }
+  .text-large { display: none; }
+  .text-small { display: inline; }
+
+  .many {
+    order: 3;
+    width: 100%;
+    margin: 0;
+    gap: 22px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+  }
+  .many::-webkit-scrollbar,
+  .manly::-webkit-scrollbar { display: none; }
+  .many a, .manly a { flex: 0 0 auto; }
+
+  /* ===== Second bar ===== */
+  .juy {
+    height: auto !important;
+    padding: 8px 12px;
+    gap: 10px;
+    align-items: center;
+    display: none;
+  }
+  .manly {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    gap: 22px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .lay { margin: 0; flex: none; }
+  .jaydrop { display: none !important; }    /* hover menus don't work on touch */
+
+  /* ===== News ticker ===== */
+  .jki { width: auto !important; flex: none; padding: 8px 12px; font-size: 14px; }
+  .plo > div:last-child { flex: 1; min-width: 0; }
+  .jgu { font-size: 14px; }
+
+  /* ===== Blog grid ===== */
+  .articlees-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card-imnage-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
+}
+
+/* ---------- Phones (<= 767px) ---------- */
+@media (max-width: 767px) {
+
+  /* ===== Hero carousel ===== */
+  .carousel-item { height: auto !important; }
+
+  /* image-only slides */
+  .ppo, .kiio, .kioo, .kipo, .kivo, .vipp { min-height: 190px; }
+  .carousel-item img { vertical-align: top; }
+  .ppo img, .kiio img, .kioo img, .kivo img, .vipp img {
+    height: auto !important; max-width: 49%; display: inline-block;
+  }
+  .kipo { text-align: center; padding: 16px 0; }
+  .kipo img.hyt { height: auto !important; max-width: 30%; display: inline-block; }
+
+  /* text slides */
+  .vipo, .viop, .vioo, .viob, .vibb, .vipb { min-height: 440px; padding-bottom: 16px; }
+  .carousel-item > div:first-child { padding: 28px 20px 0; }
+  .pkj, .pkj.col-5 {
+    width: 100% !important;
+    font-size: 24px; line-height: 30px;
+    margin-top: 0;
+  }
+  .lol, .lol.col-5 { width: 100% !important; font-size: 13px; line-height: 20px; }
+  .mnv, .mnvv { margin: 14px 0 0 !important; text-align: center; }
+  .mnv img, .mnvv img {
+    height: auto !important; max-height: 190px; width: auto; max-width: 85%;
+    object-fit: contain;
+  }
+
+  /* ===== Quick icon tiles ===== */
+  .row:not(.ytr) {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px !important;
+    width: 92%;
+    margin: 20px auto 0;
+  }
+  .row:not(.ytr) > .coll {
+    width: auto !important;
+    height: 90px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: none; align-items: center; justify-content: center;
+  }
+  .vfd, .vfdd {
+    margin: 0 !important;
+    display: block;
+    width: auto; height: auto;
+    max-width: 70%; max-height: 56px;
+  }
+  .coll:hover, .colll:hover, .card:hover { transform: none; }
+
+  /* ===== Our Product ===== */
+  .nvb { height: auto !important; margin-top: 32px; padding-bottom: 24px; }
+  .dgs, .gds { margin-left: 16px; margin-right: 16px; }
+  .gds { font-size: 24px; line-height: 30px; }
+  .gsd { width: auto !important; margin: 8px 16px 0; }
+  .hgd {
+    display: block;
+    margin: 16px auto !important;
+    max-width: 70%; height: auto;
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
+  }
+  .card { margin-top: 0 !important; padding: 24px 20px; }
+  .icon-wrapper { height: 90px; margin-bottom: 20px; }
+
+  /* ===== SME / ALATPay / Custom Cards ===== */
+  .dog, .dogg { flex-direction: column; gap: 0; margin-bottom: 24px; }
+  .sod {
+    margin: 24px 16px 0 !important;
+    width: calc(100% - 32px);
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .ngc, .ngco { margin: 20px 0 0; padding: 0 16px; }
+  .csdo, .doseo, .sodedo, .kkklo { margin-left: 0; }
+  .kkklo { margin-top: 0; margin-bottom: 8px; max-height: 40px; width: auto; }
+  .dose, .doseo { font-size: 20px; line-height: 28px; }
+  .soded, .sodedo { width: 100% !important; }
+  .gdbb {
+    width: auto; min-width: 170px;
+    height: auto !important;
+    padding: 10px 22px !important;
+    margin-top: 14px;
+  }
+  .mmj {
+    display: block;
+    width: calc(100% - 32px); height: auto;
+    margin: 16px auto 0;
+  }
+
+  /* ===== Wema POS / USSD / Loans  and  Partnerships rows ===== */
+  .row.ytr {
+    display: flex !important;
+    flex-direction: column;
+    width: 92%;
+    margin: 20px auto !important;
+    gap: 14px !important;
+  }
+  .row.ytr > .colll {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 0 20px !important;
+  }
+  .nmvh {
+    width: 56px; height: 56px;
+    margin: 16px 0 0 16px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .nmvjh, .nmvjjh { width: auto; height: auto; margin: 12px 0 0 16px; }
+  .jjjj, .jjjjh, .jjhj { margin: 0 auto; }
+  .colll h2, .colll p { padding: 0 16px; margin-top: 10px; }
+
+  /* ===== Investor Relations hero ===== */
+  .hero-section {
+    margin-top: 24px;
+    padding: 36px 20px 110px;
+  }
+  .hero-content h1 { font-size: 26px; }
+  .description { font-size: 14px; margin-bottom: 24px; }
+  .metrics-grid { gap: 18px 24px; max-width: 100%; }
+  .metric-value { font-size: 20px; }
+  .hero-image img { max-width: 100%; height: auto; }
+
+  .cards-section { padding: 0 16px 32px; }
+  .cards-container {
+    flex-direction: column;
+    height: auto !important;
+    margin: -80px auto 0;
+    gap: 16px;
+  }
+  .card-h { margin-top: 0 !important; padding: 24px; }
+  .card-h h2 { font-size: 19px; }
+
+  .chat-fab { width: 52px; height: 52px; bottom: 16px; right: 16px; }
+
+  /* ===== Sustainability ===== */
+  .jkhy { min-height: auto; padding: 32px 16px; }
+  .sustainability-section { gap: 24px; }
+  .content-side h1 { font-size: 24px; line-height: 30px; }
+  .content-side p { font-size: 0.95rem; margin-bottom: 20px; }
+  .content-side .btn-learn-more {      /* was invisible: white on transparent */
+    background: #8a1c7c; color: #fff; border: 1px solid #8a1c7c;
+  }
+  .gallery-side {
+    gap: 10px;
+    grid-template-rows: repeat(3, 110px);
+  }
+
+  /* ===== Testimonials ===== */
+  .love { height: auto; margin-top: 32px; padding-bottom: 12px; }
+  .goh { margin: 24px 16px 0; }
+  .togil { margin: 8px 16px 8px !important; font-size: 22px; line-height: 28px; }
+  .testimonial-slider {
+    margin-top: 0;
+    padding: 16px;
+    gap: 14px;
+    background: whitesmoke;
+    scroll-snap-type: x mandatory;
+  }
+  .testimonial-card {
+    flex: 0 0 82%;
+    scroll-snap-align: start;
+    min-height: 200px;
+    padding: 24px 18px;
+  }
+
+  /* ===== ALAT download promo ===== */
+  .promo-section { padding: 28px 16px 0; border-radius: 0; }
+  .sub-headline { font-size: 1.1rem; }
+  .app-badges { flex-direction: row; justify-content: center; flex-wrap: wrap; }
+  .phone-mockup img { max-height: 280px; }
+  .marketing-text { text-align: center; align-items: center; padding-bottom: 28px; }
+  .divider-line { margin-bottom: 16px; }
+
+  /* ===== Blog / Video headings ===== */
+  .hgdy { margin: 40px 16px 0; }
+  .gdyy { margin: 8px 16px 0 !important; font-size: 24px; line-height: 30px; }
+
+  /* ===== Featured blog card ===== */
+  .news-card {
+    flex-direction: column;
+    width: auto;
+    margin: 20px 16px !important;
+  }
+  .card-image-wrapper { flex: none; min-width: 100%; }
+  .card-immage { height: 210px; }
+  .card-content { padding: 20px; }
+  .card-title { font-size: 1.25rem; }
+  .card-description { font-size: 0.92rem; margin-bottom: 20px; }
+
+  /* ===== Blog grid ===== */
+  .bod { padding: 0; }
+  .articlees-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 16px;
+    margin-top: 8px !important;
+  }
+  .card-imnage-wrapper { height: 200px; }
+  .carrd-title { min-height: 0; }
+
+  /* ===== Video box ===== */
+  .kiuy {
+    width: 92%;
+    height: auto;
+    margin: 20px auto 0;
+  }
+  .lkjo {
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .tou, .GOD, .tyo, .eot { margin: 0 !important; }
+  .tou { height: 52px; width: auto; }
+  .GOD { font-size: 22px; margin-top: 10px !important; }
+  .tyo { font-size: 16px; margin-top: 12px !important; }
+  .eot { margin-top: 4px !important; }
+
+  /* ===== Footer ===== */
+  .site-footer { padding: 40px 16px 24px; }
+  .footer-container { gap: 36px; }
+  .newsletter-banner { padding: 20px 16px; }
+  .newsletter-left { min-width: 0; }
+  .newsletter-text h3 { font-size: 1.05rem; }
+  .ooi { padding: 10px 12px; }
+}
+
+/* ---------- Small phones (<= 400px) ---------- */
+@media (max-width: 400px) {
+  .pkj, .pkj.col-5 { font-size: 21px; line-height: 27px; }
+  .hero-content h1 { font-size: 23px; }
+  .row:not(.ytr) { gap: 8px !important; }
+  .row:not(.ytr) > .coll { height: 80px !important; }
+  .testimonial-card { flex-basis: 88%; }
+  .gdbb { min-width: 150px; }
+}
