@@ -64,7 +64,7 @@ img { max-width: 100%; }
   .card-imnage-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
 
   
   .carousel-item { height: auto !important; }
@@ -296,10 +296,10 @@ img { max-width: 100%; }
 
   
   .site-footer { padding: 40px 16px 24px; }
-  .footer-container { gap: 36px; }
-  .newsletter-banner { padding: 20px 16px; }
-  .newsletter-left { min-width: 0; }
-  .newsletter-text h3 { font-size: 1.05rem; }
+  .footer-container { gap: 36px; display: none !important;}
+  .newsletter-banner { padding: 20px 16px; display: none !important;}
+  .newsletter-left { min-width: 0; display: none !important;}
+  .newsletter-text h3 { font-size: 1.05rem;  display: none !important;}
   .ooi { padding: 10px 12px; }
 }
 

@@ -13,6 +13,7 @@
 
 .home:hover{
     border-bottom: 2px solid #981D87;
+    margin-top: -2%;
     color: #981D87 !important;
 }
 
@@ -113,6 +114,7 @@ li:hover{
     padding-bottom: 5px; 
     background-color:whitesmoke ;
     position: relative;
+    margin-top: 6% !important;
     
 }
 
@@ -123,7 +125,7 @@ position: absolute;
 display: flex;
 flex-direction: column;
 text-wrap: nowrap;
-margin-top: 5%;
+margin-top: 5% !important;
 gap: 25px;
 box-shadow: 0.1px 0.1px 1px .1px;
 /* border-radius: 5px; */
@@ -139,8 +141,11 @@ overflow: hidden;
   opacity: 1;
   max-height: 300px;
   z-index: 1;
+ 
 }
 }
+
+
 
 .jki{
  border: 1px  solid;
@@ -699,14 +704,6 @@ gap: 2px;
 margin-top: 10%;
 margin-left: 4%;
 }
-
-
-
-
-
-
-
-
 
 .hero-section {
   background-image: url(https://wemabank.com/assets/background-V42PbY_R.png );
@@ -1890,20 +1887,20 @@ margin-left: 3% !important;
 @media (max-width: 640px) {
   .newsletter-banner {
     padding: 20px;
+    display: none !important;
   }
   .newsletter-form {
-    min-width: 100%;
-    border-radius: 8px;
-    padding: 8px;
-    flex-direction: column;
+    display: none !important;
   }
   .email-input {
     width: 100%;
     padding: 10px;
+    display: none !important;
   }
   .submit-btn {
     width: 100%;
     justify-content: center;
+    display: none;
   }
   .links-directory-grid {
     grid-template-columns: 1fr;
