@@ -1917,13 +1917,17 @@ margin-left: 3% !important;
     font-size: 10px;
 }
 
-/* @media screen and (max-width: 900px) {
-
-
-
+ /* @media screen and (max-width: 900px) {
+.lay{
+  height: 2dvh !important;
 }
 
-@media screen and (max-width: 600px){
+.hays{
+    height: 2dvh !important;
+}
+} */
+
+/*@media screen and (max-width: 600px){
 .many{
     display: none;
 }
