@@ -31,15 +31,11 @@ img { max-width: 100%; }
     width: 100%;
     margin: 0;
     gap: 22px;
-    /* overflow-x: auto; */
     padding-bottom: 6px;
     scrollbar-width: none;
-    /* -webkit-overflow-scrolling: touch; */
     display: none;
   }
-  /* .many::-webkit-scrollbar,
-  .manly::-webkit-scrollbar { display: none; }
-  .many a, .manly a { flex: 0 0 auto; } */
+ 
 
 
   .juy {
@@ -55,8 +51,6 @@ img { max-width: 100%; }
     margin: 0;
     gap: 22px;
    
-    /* scrollbar-width: none;
-    -webkit-overflow-scrolling: touch; */
   }
   .lay { margin: 0; flex: none; }
   .jaydrop { display: none !important; }   
