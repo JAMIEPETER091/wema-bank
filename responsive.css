@@ -1,21 +1,17 @@
-/* =========================================================
-   responsive.css  -  load AFTER style.css
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="responsive.css">
-   ========================================================= */
 
-/* ---------- Global safety ---------- */
+
+
 html, body { max-width: 100%; overflow-x: hidden; }
 img { max-width: 100%; }
-bo, bod, footeru { display: block; }          /* custom tags in the HTML */
+.bo, .bod, .footeru { display: block; }        
 
-/* ---------- Tablet and below (<= 991px) ---------- */
+
 @media (max-width: 991px) {
 
-  /* your old 1024px rule padded the whole body; undo it */
+  
   body { padding: 0 !important; }
 
-  /* ===== Top nav ===== */
+
   nav {
     flex-wrap: wrap;
     align-items: center;
@@ -38,14 +34,14 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
     /* overflow-x: auto; */
     padding-bottom: 6px;
     scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+    /* -webkit-overflow-scrolling: touch; */
     display: none;
   }
-  .many::-webkit-scrollbar,
+  /* .many::-webkit-scrollbar,
   .manly::-webkit-scrollbar { display: none; }
-  .many a, .manly a { flex: 0 0 auto; }
+  .many a, .manly a { flex: 0 0 auto; } */
 
-  /* ===== Second bar ===== */
+
   .juy {
     height: auto !important;
     padding: 8px 12px;
@@ -58,30 +54,28 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
     min-width: 0;
     margin: 0;
     gap: 22px;
-    /* overflow-x: auto; */
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+   
+    /* scrollbar-width: none;
+    -webkit-overflow-scrolling: touch; */
   }
   .lay { margin: 0; flex: none; }
-  .jaydrop { display: none !important; }    /* hover menus don't work on touch */
+  .jaydrop { display: none !important; }   
 
-  /* ===== News ticker ===== */
+ 
   .jki { width: auto !important; flex: none; padding: 8px 12px; font-size: 14px; }
   .plo > div:last-child { flex: 1; min-width: 0; }
   .jgu { font-size: 14px; }
 
-  /* ===== Blog grid ===== */
   .articlees-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .card-imnage-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
 }
 
-/* ---------- Phones (<= 767px) ---------- */
 @media (max-width: 767px) {
 
-  /* ===== Hero carousel ===== */
+  
   .carousel-item { height: auto !important; }
 
-  /* image-only slides */
+ 
   .ppo, .kiio, .kioo, .kipo, .kivo, .vipp { min-height: 190px; }
   .carousel-item img { vertical-align: top; }
   .ppo img, .kiio img, .kioo img, .kivo img, .vipp img {
@@ -90,7 +84,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .kipo { text-align: center; padding: 16px 0; }
   .kipo img.hyt { height: auto !important; max-width: 30%; display: inline-block; }
 
-  /* text slides */
+  
   .vipo, .viop, .vioo, .viob, .vibb, .vipb { min-height: 440px; padding-bottom: 16px; }
   .carousel-item > div:first-child { padding: 28px 20px 0; }
   .pkj, .pkj.col-5 {
@@ -105,7 +99,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
     object-fit: contain;
   }
 
-  /* ===== Quick icon tiles ===== */
+
   .row:not(.ytr) {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
@@ -128,7 +122,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   }
   .coll:hover, .colll:hover, .card:hover { transform: none; }
 
-  /* ===== Our Product ===== */
+ 
   .nvb { height: auto !important; margin-top: 32px; padding-bottom: 24px; }
   .dgs, .gds { margin-left: 16px; margin-right: 16px; }
   .gds { font-size: 24px; line-height: 30px; }
@@ -146,7 +140,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .card { margin-top: 0 !important; padding: 24px 20px; }
   .icon-wrapper { height: 90px; margin-bottom: 20px; }
 
-  /* ===== SME / ALATPay / Custom Cards ===== */
+
   .dog, .dogg { flex-direction: column; gap: 0; margin-bottom: 24px; }
   .sod {
     margin: 24px 16px 0 !important;
@@ -172,7 +166,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
     margin: 16px auto 0;
   }
 
-  /* ===== Wema POS / USSD / Loans  and  Partnerships rows ===== */
+ 
   .row.ytr {
     display: flex !important;
     flex-direction: column;
@@ -195,7 +189,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .jjjj, .jjjjh, .jjhj { margin: 0 auto; }
   .colll h2, .colll p { padding: 0 16px; margin-top: 10px; }
 
-  /* ===== Investor Relations hero ===== */
+
   .hero-section {
     margin-top: 24px;
     padding: 36px 20px 110px;
@@ -218,7 +212,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
 
   .chat-fab { width: 52px; height: 52px; bottom: 16px; right: 16px; }
 
-  /* ===== Sustainability ===== */
+
   .jkhy { min-height: auto; padding: 32px 16px; }
   .sustainability-section { gap: 24px; }
   .content-side h1 { font-size: 24px; line-height: 30px; }
@@ -231,7 +225,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
     grid-template-rows: repeat(3, 110px);
   }
 
-  /* ===== Testimonials ===== */
+ 
   .love { height: auto; margin-top: 32px; padding-bottom: 12px; }
   .goh { margin: 24px 16px 0; }
   .togil { margin: 8px 16px 8px !important; font-size: 22px; line-height: 28px; }
@@ -249,7 +243,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
     padding: 24px 18px;
   }
 
-  /* ===== ALAT download promo ===== */
+ 
   .promo-section { padding: 28px 16px 0; border-radius: 0; }
   .sub-headline { font-size: 1.1rem; }
   .app-badges { flex-direction: row; justify-content: center; flex-wrap: wrap; }
@@ -257,11 +251,11 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .marketing-text { text-align: center; align-items: center; padding-bottom: 28px; }
   .divider-line { margin-bottom: 16px; }
 
-  /* ===== Blog / Video headings ===== */
+
   .hgdy { margin: 40px 16px 0; }
   .gdyy { margin: 8px 16px 0 !important; font-size: 24px; line-height: 30px; }
 
-  /* ===== Featured blog card ===== */
+  
   .news-card {
     flex-direction: column;
     width: auto;
@@ -273,7 +267,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .card-title { font-size: 1.25rem; }
   .card-description { font-size: 0.92rem; margin-bottom: 20px; }
 
-  /* ===== Blog grid ===== */
+ 
   .bod { padding: 0; }
   .articlees-grid {
     grid-template-columns: 1fr;
@@ -284,7 +278,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .card-imnage-wrapper { height: 200px; }
   .carrd-title { min-height: 0; }
 
-  /* ===== Video box ===== */
+  
   .kiuy {
     width: 92%;
     height: auto;
@@ -306,7 +300,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .tyo { font-size: 16px; margin-top: 12px !important; }
   .eot { margin-top: 4px !important; }
 
-  /* ===== Footer ===== */
+  
   .site-footer { padding: 40px 16px 24px; }
   .footer-container { gap: 36px; }
   .newsletter-banner { padding: 20px 16px; }
@@ -315,7 +309,7 @@ bo, bod, footeru { display: block; }          /* custom tags in the HTML */
   .ooi { padding: 10px 12px; }
 }
 
-/* ---------- Small phones (<= 400px) ---------- */
+
 @media (max-width: 400px) {
   .pkj, .pkj.col-5 { font-size: 21px; line-height: 27px; }
   .hero-content h1 { font-size: 23px; }
